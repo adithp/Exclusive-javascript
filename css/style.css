@@ -1,0 +1,900 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+a {
+    color: #000;
+}
+
+.homepage {}
+
+.homepage div.adbar {
+    background-color: #000;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: relative;
+
+
+}
+
+.homepage div.adbar p {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.homepage div.adbar p a {
+    font-weight: 600;
+    color: #FAFAFA;
+    padding-left: 8px;
+    text-decoration: underline;
+}
+
+.homepage div.adbar select.lang {
+    color: #FAFAFA;
+    position: absolute;
+    right: 5%;
+    background-color: #000;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.homepage .wrapper div.topbar {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.homepage .wrapper div.topbar h1 {
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+.homepage .wrapper div.topbar div.navbar {}
+
+.homepage .wrapper div.topbar div.navbar a {
+    margin-right: 20px;
+}
+
+.homepage .wrapper div.topbar div.navbar a.select {
+    border-bottom: 1px solid #000;
+
+}
+
+.homepage .wrapper div.topbar div.right {
+    display: flex;
+
+}
+
+.homepage .wrapper div.topbar div.right input {
+    background-color: #f5f5f5;
+    padding: 12px 42px;
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: 93%;
+    margin-right: 26px;
+    border-radius: 2px;
+}
+
+.homepage .wrapper div.topbar div.right div.icons {
+    display: flex;
+}
+
+.homepage .wrapper div.topbar div.right div.icons a {
+
+    display: flex;
+    justify-content: center;
+}
+
+.homepage .wrapper div.topbar div.right .topicon {
+    margin-right: 20px;
+    width: 30px;
+}
+
+.homepage .wrapper .banner {
+    background-color: #000;
+    padding: 12px 0 12px 28px;
+    display: flex;
+    color: #FAFAFA;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.homepage .wrapper .banner .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 36px;
+}
+
+.homepage .wrapper .banner .left img.appleIcon {
+    width: 35px;
+    margin-right: 18px;
+}
+
+.homepage .wrapper .banner .left h6 {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.homepage .wrapper .banner .left h1 {
+    font-size: 36px;
+    max-width: 220px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.homepage .wrapper .banner .left a {
+    color: #FAFAFA;
+    margin-right: 8px;
+    border-bottom: 1px solid #fafafa;
+}
+
+.homepage .wrapper .banner .left img.arrow_right {
+    width: 20px;
+}
+
+.homepage .wrapper .banner .right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.homepage .categories {
+    margin: 32px 0;
+}
+
+.homepage .categories .wrapper div.smallHead {
+    display: flex;
+    align-items: center;
+}
+
+.homepage .categories .wrapper div.smallHead div.redrect {
+    height: 30px;
+    width: 12px;
+    background-color: #DB4444;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.homepage .categories .wrapper div.smallHead h6 {
+    color: #DB4444;
+    font-size: 12px;
+}
+
+.homepage .categories .wrapper .categoryHead {
+    margin: 24px 0;
+    font-weight: 600;
+}
+
+.homepage .categories .wrapper div.CateItems {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.homepage .categories .wrapper div.CateItems div.item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 24px;
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    max-width: 180px;
+    flex: 1 0 30%;
+    margin-top: 16px;
+}
+
+.homepage .categories .wrapper div.CateItems div.item:last-child {
+    margin-right: 0;
+}
+
+.homepage .categories .wrapper div.CateItems div.item img {
+    max-width: 50px;
+}
+
+.homepage .categories .wrapper div.CateItems div.item span {}
+
+.products {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.products .wrapper div.path {
+    text-align: left;
+    font-size: 12px;
+    margin: 40px 0 24px 0;
+}
+
+div.productList {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 20px;
+
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div.productList div.product {
+    width: 19%;
+
+    margin-bottom: 24px;
+
+}
+
+
+
+div.productList div.product div.top {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 32px 46px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.productList div.product div.top .product-image {
+    max-width: 100px;
+}
+
+div.productList div.product div.top .white-round {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    padding: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.productList div.product div.top .icon {
+
+    width: 15px;
+}
+
+div.productList div.product div.bottom {
+    margin-top: 12px;
+}
+
+div.productList div.product div.bottom h6 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+div.productList div.product div.bottom span {
+    color: #DB4444;
+    margin-right: 6px;
+}
+
+div.productList div.product div.bottom div.rating {
+    display: inline-block;
+}
+
+div.productList div.product div.bottom div.rating img {
+    width: 15px;
+}
+
+div.productList div.product div.top div.addTocart {
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 8px 0;
+}
+
+div.productList div.product div.top .new {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.viewButton {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 18px 40px;
+    background-color: #DB4444;
+    color: #f5f5f5;
+    border-radius: 4px;
+
+}
+
+.product div.offer {
+    background-color: #DB4444;
+    width: 51px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.color {
+    display: flex;
+    margin-top: 8px;
+}
+
+.color .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.color .circle:last-child {
+    margin-right: 0;
+}
+
+.color .border {
+    background-color: black;
+
+
+}
+
+.color .circle .border {
+    background-color: #ffffff;
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.color .circle .last {
+
+    padding: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.color .red {
+    background-color: red;
+}
+
+.color .low-red {
+    background-color: #DB4444;
+}
+
+.color .yellow {
+    background-color: yellow;
+}
+
+.color .black {
+    background-color: #000;
+}
+
+.color .green {
+    background-color: #184A48;
+}
+
+.features {
+    margin: 40px 0;
+}
+
+.features .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.features div.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.features div.list div.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.features div.list div.feature div.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #c1c0c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.features div.list div.feature div.circle div.double-circle {
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features div.list div.feature div.circle img {
+    width: 30px;
+}
+
+.features div.list div.feature h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.features div.list div.feature p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #000;
+    color: #FAFAFA;
+    padding: 80px 0 40px 0;
+    text-align: center;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+footer div.items {
+    margin-bottom: 16px;
+}
+
+footer div.items h1 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+footer div.items h2 {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+footer div.items h3 {
+    margin-bottom: 24px;
+}
+
+footer div.items a {
+    color: #f5f5f5;
+    margin-bottom: 24px;
+    display: block;
+    opacity: 0.7;
+}
+
+footer div.items h6 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+footer div.items input {
+    border: 1px solid #fafafa;
+    padding: 14px 14px;
+    border-radius: 4px;
+    color: #f5f5f5;
+
+}
+
+footer div.items div.inputDiv img {
+    position: absolute;
+    right: 10%;
+}
+
+footer div.items .inputDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+footer div.items span {
+    opacity: 0.7;
+    font-size: 12px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+footer div.items div.images {
+    display: flex;
+
+}
+
+footer div.items div.social {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    opacity: 0.3;
+    margin-top: 32px;
+}
+
+.productDetial {}
+
+.productDetial div.path {
+    text-align: left;
+    font-size: 12px;
+    margin: 40px 0 24px 0;
+}
+
+.productDetial div.top {
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.productDetial div.top div.left {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    margin-right: 4%;
+    padding: 60px;
+}
+
+.productDetial div.top div.left img {}
+
+.productDetial div.top div.right {
+    width: 48%;
+    margin-top: 24px;
+}
+
+.productDetial div.top div.right h2 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.productDetial div.top div.right div.rating {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.productDetial div.top div.right div.rating img {
+    width: 15px;
+}
+
+.productDetial div.top div.right h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.productDetial div.top div.right p {
+    max-width: 80%;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 16px;
+}
+
+.productDetial div.top div.right div.color {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+
+.productDetial div.top div.right .color .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.productDetial div.top div.right .color .circle:last-child {
+    margin-right: 0;
+}
+
+.productDetial div.top div.right .color .border {
+    background-color: black;
+}
+
+.productDetial div.top div.right .circle .border {
+    background-color: #ffffff;
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.productDetial div.top div.right .circle .last {
+
+    padding: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+
+.productDetial div.top div.right .blue {
+    background-color: #A0BCE0;
+}
+
+.productDetial div.top div.right .color .low-red {
+    background-color: #DB4444;
+}
+
+.productDetial div.top div.right div.box {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+}
+
+.productDetial div.top div.right div.box div.item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+
+}
+
+.productDetial div.top div.right div.box div.item:last-child {
+    border-bottom: none;
+}
+
+.productDetial div.top div.right div.box div.item img {
+    margin-right: 16px;
+}
+
+.productDetial div.top div.right div.box div.item h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.productDetial div.top div.right div.box div.item p {
+    border: none;
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+}
+
+.productDetial div.top div.right div.box div.item p a {
+    text-decoration: underline;
+}
+
+.related {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.related div.smallHead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.related div.smallHead div.redrect {
+    height: 30px;
+    width: 12px;
+    background-color: #DB4444;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.related div.smallHead h6 {
+    color: #DB4444;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media all and (max-width:1280px) {
+    div.productList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .productDetial div.top div.left img {
+        width: 100%;
+    }
+
+    div.productList div.product {
+        width: 25%;
+    }
+}
+
+
+@media all and (max-width:980px) {
+    div.productList div.product {
+        width: 32%;
+    }
+
+    .homepage .categories .wrapper div.CateItems div.item:last-child {
+        margin-right: 20px;
+    }
+
+    .homepage .wrapper div.topbar div.navbar {
+        display: none;
+
+    }
+
+    .homepage .wrapper div.topbar div.navbar a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    div.productList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (max-width:768px) {
+    div.productList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .homepage .wrapper div.topbar div.navbar {
+        display: none;
+    }
+
+    .homepage div.adbar p {
+        font-size: 10px;
+    }
+
+    .productDetial div.top div.left {
+        width: 100%;
+    }
+
+    .productDetial div.top div.right {
+        width: 100%;
+    }
+
+    div.productList div.product {
+        width: 50%;
+    }
+}
+
+@media all and (max-width:640px) {
+    .homepage div.adbar {
+        height: 80px;
+
+    }
+
+    .homepage div.adbar select.lang {
+        right: 45%;
+        top: 60%;
+    }
+
+    .homepage .wrapper .banner .right {
+        display: none;
+    }
+
+    .homepage .wrapper .banner .left {
+        width: 100%;
+        padding: 36px;
+    }
+
+    .homepage .wrapper .banner .left h1 {
+        font-size: 28px;
+    }
+
+    div.productList div.product {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:480px) {
+    .homepage div.adbar {
+        height: 120px;
+
+    }
+
+    .homepage .wrapper div.topbar div.right input {
+        display: none;
+
+    }
+
+    .homepage .wrapper .banner .left h1 {
+        font-size: 22px;
+    }
+
+    .homepage .categories .wrapper div.CateItems div.item {
+        padding: 12px;
+
+    }
+
+    div.productList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .homepage div.adbar select.lang {
+        right: 40%;
+        top: 70%;
+    }
+
+    .homepage .wrapper .banner .left h1 {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:360px) {
+    .homepage .categories .wrapper div.CateItems div.item {
+        padding: 8px;
+    }
+}
+
+@media all and (max-width:320px) {}
