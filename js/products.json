@@ -1,0 +1,118 @@
+[
+    {
+        "id":1,
+        "name":"Breed Dry Dog Food",
+        "img":"images/01.png",
+        "price":100,
+        "rating": 3.0,
+        "totalRatongs":35,
+        "new":false
+    },
+    {
+        "id":2,
+        "name":"CANON EOS DSLR CAMERA",
+        "img":"images/02.png",
+        "price":360,
+        "rating": 4.0,
+        "totalRatongs":95,
+        "new":false
+    },
+    {
+        "id":3,
+        "name":"ASUS FHD Gaming Laptop",
+        "img":"images/03.png",
+        "price":700,
+        "rating": 5.0,
+        "totalRatongs":325,
+        "new":false
+    },
+    {
+        "id":4,
+        "name":"Curology Product Set",
+        "img":"images/04.png",
+        "price":1000,
+        "rating": 4.0,
+        "totalRatongs":145,
+        "new":false
+    },
+    {
+        "id":5,
+        "name":"Kid's ELectric Car",
+        "img":"images/05.png",
+        "price":960,
+        "rating": 5.0,
+        "totalRatongs":65,
+        "new":true,
+        "colors":["#FB1314","#DB4444"]
+    },
+    {
+        "id":6,
+        "name":"Jr.Zoom Soccor Cleats",
+        "img":"images/06.png",
+        "price":1160,
+        "rating": 5.0,
+        "totalRatongs":35,
+        "new":false,
+        "colors":["#EEFF61","#DB4444"]
+    },
+    {
+        "id":7,
+        "name":"GP11 Shooter USB Gamepad",
+        "img":"images/07.png",
+        "price":660,
+        "rating": 4.5,
+        "totalRatongs":55,
+        "new":true,
+        "colors":["#000000","#DB4444"]
+    },
+    {
+        "id":8,
+        "name":"Quilted Satin Jacket",
+        "img":"images/08.png",
+        "price":660,
+        "rating": 4.5,
+        "totalRatongs":55,
+        "new":true,
+        "colors":["#184A48","#DB4444"]
+    },
+    {
+        "id":9,
+        "name":"HAVIT HV-G92 Gamepad",
+        "img":"images/09.png",
+        "price":160,
+        "rating": 5.0,
+        "totalRatongs":86,
+        "new":false,
+        "offer":40
+    },
+    {
+        "id":10,
+        "name":"AK-900 Wired Keyboard",
+        "img":"images/10.png",
+        "price":1160,
+        "rating": 4.0,
+        "totalRatongs":75,
+        "new":false,
+        "offer":35
+    },
+    {
+        "id":11,
+        "name":"IPS LCD Gaming Monitor",
+        "img":"images/11.png",
+        "price":400,
+        "rating": 5.0,
+        "totalRatongs":99,
+        "new":false,
+        "offer":30
+    },
+    {
+        "id":12,
+        "name":"RGB liquid CPU Cooler",
+        "img":"images/12.png",
+        "price":160,
+        "rating": 4.5,
+        "totalRatongs":85,
+        "new":false
+    }
+    
+]

@@ -239,6 +239,13 @@ a {
     margin-bottom: 60px;
 }
 
+.products .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .products .wrapper div.path {
     text-align: left;
     font-size: 12px;
@@ -246,30 +253,28 @@ a {
 }
 
 div.productList {
-    display: flex;
-
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    padding: 20px;
-
+    display: grid;
     width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px 0;
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+
+
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-div.productList div.product {
-    width: 19%;
 
-    margin-bottom: 24px;
+div.productList div.product {}
 
-}
+
 
 
 
 div.productList div.product div.top {
-    height: 200px;
-    width: 200px;
+    height: 270px;
+
     overflow: hidden;
     background-color: #f5f5f5;
     display: flex;
@@ -326,6 +331,7 @@ div.productList div.product div.bottom div.rating img {
 }
 
 div.productList div.product div.top div.addTocart {
+
     background-color: #000;
     position: absolute;
     bottom: 0;
@@ -333,6 +339,15 @@ div.productList div.product div.top div.addTocart {
     color: #f5f5f5;
     text-align: center;
     padding: 8px 0;
+    cursor: pointer;
+}
+
+.addTocart {
+    display: none;
+}
+
+div.productList div.product:hover .addTocart {
+    display: block;
 }
 
 div.productList div.product div.top .new {
@@ -772,16 +787,12 @@ footer p {
         width: 100%;
     }
 
-    div.productList div.product {
-        width: 25%;
-    }
+
 }
 
 
 @media all and (max-width:980px) {
-    div.productList div.product {
-        width: 32%;
-    }
+
 
     .homepage .categories .wrapper div.CateItems div.item:last-child {
         margin-right: 20px;
@@ -823,9 +834,7 @@ footer p {
         width: 100%;
     }
 
-    div.productList div.product {
-        width: 50%;
-    }
+
 }
 
 @media all and (max-width:640px) {

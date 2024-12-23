@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Phones",
+        "img": "images/CellPhone.svg"
+    },
+    {
+        "id": 2,
+        "name": "SmartWatch",
+        "img": "images/SmartWatch.svg"
+    },
+    {
+        "id": 3,
+        "name": "Computers",
+        "img": "images/Computer.svg"
+    },
+    {
+        "id": 4,
+        "name": "HeadPhones",
+        "img": "images/eadphone.svg"
+    },
+    {
+        "id": 5,
+        "name": "Gaming",
+        "img": "images/Gamepad.svg"
+    },
+    {
+        "id": 6,
+        "name": "Camera",
+        "img": "images/Camera.svg"
+    }
+
+]
