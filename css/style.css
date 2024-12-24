@@ -695,6 +695,10 @@ footer p {
     justify-content: center;
 }
 
+.menu {
+    display: none;
+}
+
 
 .productDetial div.top div.right .circle .last {
 
@@ -778,6 +782,27 @@ footer p {
     font-weight: 600;
 }
 
+.searchh {
+    display: none;
+    margin-right: 20px;
+    width: 30px;
+
+}
+
+.homepage .wrapper div.topbar div.unhide {
+    display: flex !important;
+    flex-direction: column;
+
+}
+
+.homepage .wrapper .menuExtend {
+    margin-top: 10rem;
+}
+
+.menuExtend {
+    margin-top: 10rem;
+}
+
 @media all and (max-width:1280px) {
     div.productList {
         grid-template-columns: repeat(4, 1fr);
@@ -803,6 +828,10 @@ footer p {
 
     }
 
+    .menu {
+        display: block;
+    }
+
     .homepage .wrapper div.topbar div.navbar a {
         margin-right: 0;
         margin-bottom: 10px;
@@ -814,6 +843,23 @@ footer p {
 }
 
 @media all and (max-width:768px) {
+    .homepage .wrapper div.topbar div.right input {
+        background-color: #fff;
+        height: 30px;
+        width: 30px;
+    }
+
+    .homepage .wrapper div.topbar div.right input::placeholder {
+        opacity: 0;
+
+    }
+
+    .searchh {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     div.productList {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -904,6 +950,14 @@ footer p {
     .homepage .categories .wrapper div.CateItems div.item {
         padding: 8px;
     }
+
+    .homepage .wrapper div.topbar h1 {
+        font-size: 15px;
+    }
 }
 
-@media all and (max-width:320px) {}
+@media all and (max-width:320px) {
+    .homepage .wrapper div.topbar h1 {
+        display: none;
+    }
+}

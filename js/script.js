@@ -6,6 +6,21 @@ var obj;
 var objSize;
 
 const input = document.querySelector('#input');
+const menu  = document.querySelector('.menu');
+const navbar = document.querySelector('.navbar');
+
+const productSection = document.querySelector('.products');
+menu.addEventListener('click',()=> {
+ navbar.classList.toggle('unhide');
+ if(document.querySelector('.banner')){
+    document.querySelector('.banner').classList.toggle('menuExtend');
+ }
+ else if(document.querySelector('.products')){
+    productSection.classList.toggle('menuExtend');
+ }
+    
+ })
+   
 
 
 
@@ -154,7 +169,17 @@ function renderCategories(data) {
                               <span style="opacity: 0.3;color:black">(${renderData[i].totalRatongs})</span>
   
                           </div>
-  
+                ${renderData[i].colors ? ` <div class="color">
+                        <div class="circle border">
+                            <div class="border">
+                                <div class="last " style="background:${renderData[i].colors[0]};"></div>
+                            </div>
+                        </div>
+                        <div class="circle" style="background:${renderData[i].colors[1]};">
+
+                        </div>
+                    </div>`: ""}
+
                       </div>
   `
   
