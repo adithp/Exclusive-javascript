@@ -65,6 +65,15 @@ a {
     background-color: #000;
 }
 
+.homepage .wrapper {
+    max-width: none;
+}
+
+.homepage .categories .wrapper {
+
+    max-width: 1200px;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -82,7 +91,7 @@ a {
 .homepage .wrapper div.topbar h1 {
     font-size: 26px;
     font-weight: 700;
-
+    cursor: pointer;
 }
 
 .homepage .wrapper div.topbar div.navbar {}
@@ -91,10 +100,11 @@ a {
     margin-right: 20px;
 }
 
-.homepage .wrapper div.topbar div.navbar a.select {
+.homepage .wrapper div.topbar div.navbar a:hover {
     border-bottom: 1px solid #000;
-
 }
+
+
 
 .homepage .wrapper div.topbar div.right {
     display: flex;
@@ -103,13 +113,20 @@ a {
 
 .homepage .wrapper div.topbar div.right input {
     background-color: #f5f5f5;
-    padding: 12px 42px;
+    padding: 12px 48px 12px 16px;
+    /* Add left padding for the text */
+    background-position: right 16px center;
+    /* Adjust icon position */
     background-image: url('../images/search.svg');
     background-repeat: no-repeat;
-    background-position: 93%;
     margin-right: 26px;
     border-radius: 2px;
+    font-size: 12px;
+    width: 100%;
+    min-width: 230px;
 }
+
+.homepage .wrapper div.topbar div.right input::placeholder {}
 
 .homepage .wrapper div.topbar div.right div.icons {
     display: flex;
@@ -128,7 +145,7 @@ a {
 
 .homepage .wrapper .banner {
     background-color: #000;
-    padding: 12px 0 12px 28px;
+    padding: 0px 0 12px 28px;
     display: flex;
     color: #FAFAFA;
     margin-top: 40px;
@@ -154,8 +171,8 @@ a {
 }
 
 .homepage .wrapper .banner .left h1 {
-    font-size: 36px;
-    max-width: 220px;
+    font-size: 48px;
+    max-width: 350px;
     font-weight: 600;
     margin-bottom: 18px;
 }
@@ -173,10 +190,11 @@ a {
 .homepage .wrapper .banner .right {
     width: 50%;
     overflow: hidden;
+    padding-right: 20px;
 }
 
 .homepage .categories {
-    margin: 32px 0;
+    margin: 50px 0 32px 0;
 }
 
 .homepage .categories .wrapper div.smallHead {
@@ -185,8 +203,8 @@ a {
 }
 
 .homepage .categories .wrapper div.smallHead div.redrect {
-    height: 30px;
-    width: 12px;
+    height: 40px;
+    width: 20px;
     background-color: #DB4444;
     border-radius: 2px;
     margin-right: 12px;
@@ -194,11 +212,13 @@ a {
 
 .homepage .categories .wrapper div.smallHead h6 {
     color: #DB4444;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .homepage .categories .wrapper .categoryHead {
     margin: 24px 0;
+    font-size: 36px;
     font-weight: 600;
 }
 
@@ -210,7 +230,7 @@ a {
 }
 
 .homepage .categories .wrapper div.CateItems div.item {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     padding: 30px 24px;
     flex: 1;
     margin-right: 20px;
@@ -255,10 +275,10 @@ a {
 div.productList {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 20px 0;
-    grid-column-gap: 28px;
-    grid-row-gap: 28px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 0 42px 0;
+
+    grid-row-gap: 60px;
 
 
     text-align: left;
@@ -266,14 +286,22 @@ div.productList {
 }
 
 
-div.productList div.product {}
+div.productList div.product {
+    height: 320px;
+    width: 270px;
+    margin-right: 30px;
+}
+
+div.productList div.product:nth-child(4n) {
+    margin-right: 0;
+}
 
 
 
 
 
 div.productList div.product div.top {
-    height: 270px;
+    height: 250px;
 
     overflow: hidden;
     background-color: #f5f5f5;
@@ -294,10 +322,10 @@ div.productList div.product div.top .white-round {
     top: 10%;
     padding: 4px;
     background-color: #fff;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 34px;
+    height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,11 +333,11 @@ div.productList div.product div.top .white-round {
 
 div.productList div.product div.top .icon {
 
-    width: 15px;
+    width: 20px;
 }
 
 div.productList div.product div.bottom {
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 div.productList div.product div.bottom h6 {
@@ -523,11 +551,17 @@ footer .wrapper {
 
 footer div.items {
     margin-bottom: 16px;
+    margin-right: 16px;
+
+}
+
+footer div.items:last-child {
+    margin-right: 0;
 }
 
 footer div.items h1 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 24px;
 }
 
@@ -542,17 +576,18 @@ footer div.items h3 {
 }
 
 footer div.items a {
-    color: #f5f5f5;
+    color: #fafafa;
     margin-bottom: 24px;
     display: block;
-    opacity: 0.7;
+    max-width: 175px;
+
 }
 
 footer div.items h6 {
     margin-bottom: 12px;
     font-size: 16px;
     font-weight: 400;
-    opacity: 0.7;
+    color: #FAFAFA;
 }
 
 footer div.items input {
@@ -805,11 +840,15 @@ footer p {
 
 @media all and (max-width:1280px) {
     div.productList {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .productDetial div.top div.left img {
         width: 100%;
+    }
+
+    div.productList div.product:nth-child(3n) {
+        margin-right: 0;
     }
 
 
@@ -838,7 +877,11 @@ footer p {
     }
 
     div.productList {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    div.productList div.product:nth-child(2n) {
+        margin-right: 0;
     }
 }
 
@@ -862,6 +905,10 @@ footer p {
 
     div.productList {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    div.productList div.product:nth-child(2n) {
+        margin-right: 0;
     }
 
     .homepage .wrapper div.topbar div.navbar {
@@ -907,8 +954,15 @@ footer p {
         font-size: 28px;
     }
 
-    div.productList div.product {
-        width: 100%;
+    div.productList {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.productList div.product:nth-child(1n) {
+        margin-right: 0;
     }
 }
 
