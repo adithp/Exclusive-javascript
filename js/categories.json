@@ -6,14 +6,15 @@
     },
     {
         "id": 2,
-        "name": "SmartWatch",
-        "img": "images/SmartWatch.svg"
-    },
-    {
-        "id": 3,
         "name": "Computers",
         "img": "images/Computer.svg"
     },
+    {
+        "id": 3,
+        "name": "SmartWatch",
+        "img": "images/SmartWatch.svg"
+    },
+    
     {
         "id": 4,
         "name": "HeadPhones",
